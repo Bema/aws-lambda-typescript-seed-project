@@ -1,0 +1,29 @@
+{
+  "name": "auth-service",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "pre-build": "npm run tslint",
+    "test": "./node_modules/.bin/mocha -r ./node_modules/ts-node/register src/**/*test.ts",
+    "tslint": "./node_modules/.bin/tslint -c tslint.json -p tsconfig.json",
+    "build:clean": "rm -rf build",
+    "build": "npm run build:clean && ./node_modules/.bin/tsc",
+    "dev": "./node_modules/.bin/tsc -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://git-codecommit.eu-west-1.amazonaws.com/v1/repos/auth-service"
+  },
+  "author": "",
+  "devDependencies": {
+    "@types/chai": "^3.5.2",
+    "@types/mocha": "^2.2.41",
+    "@types/node": "^7.0.18",
+    "chai": "^3.5.0",
+    "mocha": "^3.3.0",
+    "ts-node": "^3.0.4",
+    "tslint": "^5.2.0",
+    "typescript": "^2.3.2"
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "compileOnSave": false,
+  "buildOnSave": false,
+  "compilerOptions": {
+    "outDir": "build",
+    "rootDirs": [
+      "src"
+    ],
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "target": "es6",
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "noImplicitAny": false,
+    "removeComments": false,
+    "sourceMap": false,
+    "inlineSourceMap": true,
+    "noEmitHelpers": true,
+    "typeRoots": [
+      "node_modules/@types"
+    ],
+    "types": [
+      "node",
+      "mocha",
+      "chai"
+    ]
+  },
+  "include": [
+    "**/*"
+  ],
+  "exclude": [
+    "src/*.test.ts",
+    "node_modules",
+    "build"
+  ]
+}
